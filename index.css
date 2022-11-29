@@ -5,7 +5,9 @@ body{
     font-family: sans-serif;
     word-wrap: break-word;
     overflow: break-word;
+    background-size:  cover;
 }
+
 
 h1,h2,h3,h4,h5,h6{
     font-weight: 900;
@@ -53,11 +55,11 @@ section.module.content{
 }
 
 section.module.parallax{
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: center;
-    height: 100vh !important;
-    width: 100%;
+    height: auto !important;
+    width: auto;
     position: relative;
     overflow: hidden;
     background-position: 50% 50%;
@@ -67,6 +69,7 @@ section.module.parallax{
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    max-width: 100%;
 }
 
 section.module.parallax::after{
